@@ -1,0 +1,138 @@
+body {
+    background-color: $background-color;
+    color: $text-color;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    padding: 1em;
+    justify-content:center;
+
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        width: 100%;
+
+        .texto-header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(192, 175, 153);
+            a {
+                color: rgb(153, 134, 104);
+                font-family: fantasy;
+                text-decoration: none;
+                font-size: 1.5em;
+                margin: 0 0.5em;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+            color: rgb(153, 134, 104);
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.album-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2em 0;
+    
+    h1 {
+        font-family: fantasy;
+        font-size: 2.5em;
+        margin: 0.2em 0;
+    }
+
+    p {
+        font-family: fantasy;
+        font-size: 1.2em;
+        color: $secondary-text-color;
+        max-width: 600px;
+    }
+
+    .btn-group {
+        margin: 1em 0;
+
+        .btn {
+            padding: 0.6em 1.2em;
+            margin: 0 0.5em;
+            color: #fff;
+            text-decoration: none;
+            border-radius: $btn-border-radius;
+            font-weight: bold;
+            border: 1px solid transparent;
+            transition: all 0.3s;
+
+
+            &.btn-primary {
+                background-color: $btn-primary-color;
+
+                &:hover {
+                    background-color: lighten($btn-primary-color, 10%);
+                }
+            }
+
+            &.btn-secondary {
+                background-color: $btn-secondary-color;
+
+                &:hover {
+                    background-color: lighten($btn-secondary-color, 10%);
+                }
+            }
+        }
+    }
+}
+
+.album-cards {
+
+    .image-container {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        transition: width 0.4s, height 0.4s;
+        margin: 0 auto;
+      }
+  
+      .image-container img {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.4s;
+      }
+      .expanded {
+        width: 600px;
+        height: 400px;
+      }
+  
+      .expanded img {
+        transform: scale(1.1); 
+    }
+
+    footer {
+        width: 100%;
+        background-color: bisque; !important
+    }
