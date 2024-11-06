@@ -18,7 +18,7 @@ body {
 }
 .album {
     max-width: 1200px;
-    max-height: 600px;
+    height: 100%;
     margin: 0 auto;
 }
 h1 {
@@ -77,4 +77,13 @@ h1 {
     .card {
         width: 100%;
     }
+}
+footer {
+    background-color: rgb(153, 134, 104);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }

@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   buttons.forEach(button => {
       button.addEventListener('click', function (event) {
           event.preventDefault();
-          alert('Detalhes do jogo ainda não disponíveis!');
+          alert('Ainda Não Disponivel!');
       });
   });
 });
